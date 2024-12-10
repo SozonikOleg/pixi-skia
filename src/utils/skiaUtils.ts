@@ -1,5 +1,6 @@
 import * as PIXI from "pixi.js";
-import { Canvas } from "skia-canvas";
+import * as SkiaCanvas from "skia-canvas";
+const { Canvas } = SkiaCanvas;
 import { PDFDocument } from "pdf-lib";
 
 /**

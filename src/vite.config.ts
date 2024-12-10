@@ -1,7 +1,9 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  base: "/pixi-skia/", // Замените на имя вашего репозитория
   build: {
-    target: "esnext",
+    outDir: "dist", // Укажите выходную директорию
+    emptyOutDir: true, // Очищает папку перед сборкой
   },
 });
