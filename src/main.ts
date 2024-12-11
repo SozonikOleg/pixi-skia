@@ -1,15 +1,12 @@
-import { settings } from "@pixi/settings";
 import { Application, Container, Graphics } from "pixi.js";
 import { convertPixiToSkia, exportToPDF } from "./utils/skiaUtils";
-
-// Настройки Pixi.js
-console.log("Rendering environment:", settings.PREFER_ENV);
 
 const app = new Application({
   width: 800,
   height: 600,
   backgroundColor: 0x1099bb,
 });
+
 document.body.appendChild(app.view);
 
 // Константы и настройки
