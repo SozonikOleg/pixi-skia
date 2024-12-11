@@ -1,9 +1,12 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/pixi-skia/", // Замените на имя вашего репозитория
+  base: "./",
   build: {
-    outDir: "dist", // Укажите выходную директорию
-    emptyOutDir: true, // Очищает папку перед сборкой
+    outDir: "dist", // Папка для сборки
+    assetsDir: "static", // Папка для ассетов
+    rollupOptions: {
+      input: "./client/index.html", // Точка входа
+    },
   },
 });
